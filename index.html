@@ -422,6 +422,33 @@ body.gloss-off .jt{border-bottom:0;cursor:auto}
 .dcv[hidden]{display:none}
 input[type=range]{max-width:100%}
 @media (max-width:860px){.nestrow{grid-template-columns:1fr}.split{flex-direction:column}.split span{flex:none}}
+
+/* ===== 밝은 바탕 (하얀 배경) — 실험 화면(.cwrap)과 게임 화면(.gscene)만 어두운 모니터로 둔다 ===== */
+:root{
+  --bg:#ffffff; --panel:#f6f7fb; --panel2:#eceef6; --rule:#d3d7e6;
+  --text:#1b1c2a; --muted:#5b5d76;
+  --stain:#a136a1; --gfp:#0b7f4b; --eye:#c93421; --amber:#9a5f00; --info:#1f5cc4;
+  --accent:#2c59c9;
+  --c-doc:#7038d8; --c-asst:#cf3d79; --c-fly:#c92c2c; --c-robo:#0b7f8d; --c-sia:#4f5066; --c-moa:#8f6113;
+  color-scheme:light;
+}
+.cwrap,.gscene,.upic{
+  --panel:#1c1e2d; --panel2:#25283a; --rule:#363a52; --text:#eceaf3; --muted:#9d9bb8;
+  --stain:#d672d6; --gfp:#5ee39c; --eye:#f0604d; --amber:#f1b646; --info:#82b8ff; --accent:#9ab8ff;
+  --c-doc:#b07cff; --c-asst:#ff86b8; --c-fly:#ef5b5b; --c-robo:#57d0dc; --c-sia:#c9c9d6; --c-moa:#e8c48a;
+  color:var(--text);
+}
+nav.top{background:rgba(255,255,255,.92);border-bottom:1px solid var(--rule)}
+.lead{color:#34364a}
+.hexno{background:linear-gradient(160deg,#e3d9ff,#eceef6);color:#2a2350}
+.pair .tag.fly,.chip.warn,.caution b,.bridge.field h4,.qi .fb.no,.qi .bt.wrong,.cards b{color:#b02a18}
+.pair .tag.nn,.cards em{color:#86278a}
+.kgitem p{color:#3a3c52}
+#tip{background:#ffffff;color:var(--text);border:1px solid var(--rule);box-shadow:0 8px 24px rgba(27,28,42,.18)}
+#study{background:rgba(255,255,255,.96);border:1px solid var(--rule);box-shadow:0 6px 18px rgba(27,28,42,.16)}
+.say,.duel,.qi,.cards>div,.big a,.kpi{box-shadow:0 1px 2px rgba(27,28,42,.05)}
+.bt[aria-pressed=true],.bt.primary{background:rgba(11,127,75,.12)}
+.cwrap .bt[aria-pressed=true],.cwrap .bt.primary{background:rgba(94,227,156,.16)}
 </style>
 </head><body>
 <div id="prog" aria-hidden="true"></div>
