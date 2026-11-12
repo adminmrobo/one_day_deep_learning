@@ -16,6 +16,10 @@
 <meta property="og:url" content="https://adminmrobo.github.io/one_day_deep_learning/">
 <meta property="og:type" content="article">
 <link rel="canonical" href="https://adminmrobo.github.io/one_day_deep_learning/">
+<meta property="og:image" content="https://adminmrobo.github.io/one_day_deep_learning/assets/og_cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:image" content="https://adminmrobo.github.io/one_day_deep_learning/assets/og_cover.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
@@ -423,32 +427,66 @@ body.gloss-off .jt{border-bottom:0;cursor:auto}
 input[type=range]{max-width:100%}
 @media (max-width:860px){.nestrow{grid-template-columns:1fr}.split{flex-direction:column}.split span{flex:none}}
 
-/* ===== 밝은 바탕 (하얀 배경) — 실험 화면(.cwrap)과 게임 화면(.gscene)만 어두운 모니터로 둔다 ===== */
+/* ===== 밝은 바탕 (하얀 배경) — 색은 신경망 도감(neural_network_atlas)의 밝은 판에 맞춘다 ===== */
 :root{
-  --bg:#ffffff; --panel:#f6f7fb; --panel2:#eceef6; --rule:#d3d7e6;
-  --text:#1b1c2a; --muted:#5b5d76;
-  --stain:#a136a1; --gfp:#0b7f4b; --eye:#c93421; --amber:#9a5f00; --info:#1f5cc4;
-  --accent:#2c59c9;
+  --bg:#ffffff; --panel:#f7f9fb; --panel2:#eef2f6; --rule:#c9d2da;
+  --text:#16212b; --muted:#5b6874;
+  --stain:#b03fae; --gfp:#2f8f0e; --eye:#d2470a; --amber:#b4630c; --info:#1e55c8;
+  --accent:#1e55c8;
   --c-doc:#7038d8; --c-asst:#cf3d79; --c-fly:#c92c2c; --c-robo:#0b7f8d; --c-sia:#4f5066; --c-moa:#8f6113;
   color-scheme:light;
 }
-.cwrap,.gscene,.upic{
-  --panel:#1c1e2d; --panel2:#25283a; --rule:#363a52; --text:#eceaf3; --muted:#9d9bb8;
-  --stain:#d672d6; --gfp:#5ee39c; --eye:#f0604d; --amber:#f1b646; --info:#82b8ff; --accent:#9ab8ff;
-  --c-doc:#b07cff; --c-asst:#ff86b8; --c-fly:#ef5b5b; --c-robo:#57d0dc; --c-sia:#c9c9d6; --c-moa:#e8c48a;
-  color:var(--text);
-}
-nav.top{background:rgba(255,255,255,.92);border-bottom:1px solid var(--rule)}
-.lead{color:#34364a}
-.hexno{background:linear-gradient(160deg,#e3d9ff,#eceef6);color:#2a2350}
-.pair .tag.fly,.chip.warn,.caution b,.bridge.field h4,.qi .fb.no,.qi .bt.wrong,.cards b{color:#b02a18}
-.pair .tag.nn,.cards em{color:#86278a}
-.kgitem p{color:#3a3c52}
-#tip{background:#ffffff;color:var(--text);border:1px solid var(--rule);box-shadow:0 8px 24px rgba(27,28,42,.18)}
-#study{background:rgba(255,255,255,.96);border:1px solid var(--rule);box-shadow:0 6px 18px rgba(27,28,42,.16)}
-.say,.duel,.qi,.cards>div,.big a,.kpi{box-shadow:0 1px 2px rgba(27,28,42,.05)}
-.bt[aria-pressed=true],.bt.primary{background:rgba(11,127,75,.12)}
-.cwrap .bt[aria-pressed=true],.cwrap .bt.primary{background:rgba(94,227,156,.16)}
+nav.top{background:rgba(255,255,255,.94);border-bottom:1px solid var(--rule)}
+.lead{color:#2c3a47}
+.hexno{background:linear-gradient(160deg,#e3ebfa,#eef2f6);color:#16212b}
+.pair .tag.fly,.chip.warn,.caution b,.bridge.field h4,.qi .fb.no,.qi .bt.wrong,.cards b{color:#b3390a}
+.pair .tag.nn,.cards em{color:#8f2f8d}
+.kgitem p{color:#2c3a47}
+#tip{background:#ffffff;color:var(--text);border:1px solid var(--rule);box-shadow:0 8px 24px rgba(22,33,43,.18)}
+#study{background:rgba(255,255,255,.96);border:1px solid var(--rule);box-shadow:0 6px 18px rgba(22,33,43,.16)}
+.say,.duel,.qi,.cards>div,.big a,.kpi{box-shadow:0 1px 2px rgba(22,33,43,.05)}
+.bt[aria-pressed=true],.bt.primary{background:rgba(47,143,14,.12)}
+/* 실험 화면: 흰 종이 + 옅은 모눈 */
+.cwrap{background:#ffffff;background-image:linear-gradient(rgba(30,85,200,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(30,85,200,.05) 1px,transparent 1px);background-size:24px 24px;border:1px solid var(--rule)}
+.stampd{color:#8a5a00;background:rgba(241,182,70,.22);border-color:rgba(180,99,12,.6)}
+.mx i.p{border-color:rgba(91,104,116,.7)}
+.mx i.blank{background:rgba(91,104,116,.08)}
+.upic{background:#fff}
+/* 교시 머리 · 표지: 도감 카드 */
+.gscene.atlas{background:#ffffff;background-image:linear-gradient(rgba(30,85,200,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(30,85,200,.05) 1px,transparent 1px);background-size:24px 24px;border:1px solid var(--rule)}
+.gscene.atlas::after{display:none}
+.gscene.atlas.gbig{border-width:0 0 1px}
+.gscene.atlas .gcap{background:none;padding-top:2px}
+.gscene.atlas .gcap b{background:none;-webkit-background-clip:border-box;background-clip:border-box;color:var(--text);letter-spacing:0}
+.gscene.atlas .gcap span{color:var(--muted)}
+.adiag{flex:0 1 420px;min-width:0;align-self:center;margin:0 6px 8px}
+.adiag>svg{display:block;width:100%;height:auto;max-height:180px}
+.adiag .ae,.aleg .ae{stroke:#9AA7B3;stroke-width:1.1;fill:none}
+.adiag .at{font-size:11px;fill:var(--muted);font-weight:700}
+.adiag .an{transform-box:fill-box;transform-origin:center;animation:apulse calc(var(--n,4)*.45s + 1.6s) infinite;animation-delay:calc(var(--d)*.45s)}
+.adiag svg.hasback .an{animation-duration:calc(var(--n,4)*.9s + 2.2s)}
+.adiag .ab{fill:none;stroke:#d2470a;stroke-width:2;opacity:0;animation:aback calc(var(--n,4)*.9s + 2.2s) infinite;animation-delay:calc(var(--n,4)*.45s + .6s + var(--d)*.45s)}
+@keyframes apulse{0%,16%,100%{transform:scale(1);filter:none}7%{transform:scale(1.3);filter:drop-shadow(0 0 3px rgba(30,85,200,.9))}}
+@keyframes aback{0%,14%,100%{opacity:0}6%{opacity:1}}
+@media (prefers-reduced-motion:reduce){.adiag .an,.adiag .ab{animation:none}}
+.gscene.atlas.gbig .gst{flex-wrap:wrap;gap:4px clamp(2px,1.2vw,14px);padding:60px 12px 0}
+.gscene.atlas.gbig .gst img,.gscene.atlas.gbig .gst img.opt{display:block;width:clamp(44px,9vw,92px)}
+.gscene.atlas.gbig .adiag{flex:1 0 100%;order:2;max-width:980px;margin:6px auto 4px}
+.gscene.atlas .adiag[data-net=exam]{flex:1 1 560px}
+.adash{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}
+.acard{display:flex;flex-direction:column;align-items:center;gap:2px;text-decoration:none;color:var(--text);background:rgba(255,255,255,.92);border:1px solid var(--rule);border-radius:12px;padding:8px 6px;min-width:0}
+.acard:hover{border-color:var(--accent);box-shadow:0 2px 8px rgba(30,85,200,.15)}
+.acard span{font-size:11.5px;font-weight:700;color:var(--accent)}
+.acard b{font-size:12.5px;line-height:1.3;text-align:center}
+.acard svg{width:100%;height:74px}
+.aleg{display:flex;flex-wrap:wrap;gap:4px 14px;justify-content:center;font-size:12.5px;color:var(--muted);margin:2px 0 6px}
+.aleg span{display:inline-flex;align-items:center;gap:2px}
+.aleg svg{width:26px;height:26px}
+.aleg .an{animation:none}
+@media (max-width:760px){.adash{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.gscene.atlas.gwide .gst{flex-wrap:wrap;gap:4px clamp(2px,1.2vw,14px)}
+.gscene.atlas.gwide .gst img,.gscene.atlas.gwide .gst img.opt{display:block;width:clamp(44px,9vw,92px)}
+.gscene.atlas.gwide .adiag{flex:1 0 100%;order:2;max-width:980px;margin:6px auto 4px}
 </style>
 </head><body>
 <div id="prog" aria-hidden="true"></div>
@@ -460,7 +498,7 @@ nav.top{background:rgba(255,255,255,.92);border-bottom:1px solid var(--rule)}
 </nav>
 
 <!-- 0-1 글 표지 (대체 표지: 그림 받기 전) -->
-<figure class="gscene gbig" data-img="cover_one_day_dl" role="img" aria-label="어두운 연구실의 액자 모니터에 신경망 도식이 깜빡이고, 인턴 시아와 모아가 가운데에서 노트를 보고, 조수 하루와 초파리 연구원, 주판봇, 박사가 둘러서 있습니다"><div class="gst"><img data-who="doc" data-mood="board" class="opt" alt=""><img data-who="asst" data-mood="firm" class="opt" alt=""><img data-who="sia" data-mood="explain" alt=""><div class="gmon"><canvas data-kind="net" width="128" height="72"></canvas></div><img data-who="moa" data-mood="cheer" alt=""><img data-who="fly" data-mood="magnify" class="opt" alt=""><img data-who="robo" data-mood="calc" class="opt" alt=""></div><figcaption class="gcap"><b>하루 만에 끝내는 딥러닝 서머리 노트</b><span>PIXEL LAB · QUIZ EVE — 박사의 쪽지시험 대비, 6교시와 종례 모의고사</span></figcaption></figure>
+<figure class="gscene atlas gbig" data-img="cover_one_day_dl" role="img" aria-label="연구실 식구 여섯이 나란히 서 있고, 그 아래에 1교시부터 6교시까지의 신경망 구조 그림 여섯 장이 놓여 있습니다. 그림을 누르면 그 교시로 갑니다"><div class="gst"><img data-who="doc" data-mood="board" class="opt" alt=""><img data-who="asst" data-mood="firm" class="opt" alt=""><img data-who="sia" data-mood="explain" alt=""><div class="adiag" data-net="net"></div><img data-who="moa" data-mood="cheer" alt=""><img data-who="fly" data-mood="magnify" class="opt" alt=""><img data-who="robo" data-mood="calc" class="opt" alt=""></div><figcaption class="gcap"><b>하루 만에 끝내는 딥러닝 서머리 노트</b><span>박사의 쪽지시험 대비 · 그림을 누르면 그 교시로 갑니다</span><div class="aleghere"></div></figcaption></figure>
 
 <header class="hero">
 <div class="wrap hero-text">
@@ -591,7 +629,7 @@ nav.top{background:rgba(255,255,255,.92);border-bottom:1px solid var(--rule)}
 </section>
 
 <!-- ===== 1교시 ===== -->
-<div class="wrap"><figure class="gscene" data-img="sc_period1" role="img" aria-label="액자 모니터에 뉴런 하나로 선 세 개가 모이는 도식이 깜빡이고, 시아와 조수 하루, 모아가 지켜봅니다"><div class="gst"><img data-who="sia" data-mood="think" alt=""><img data-who="asst" data-mood="firm" class="opt" alt=""><div class="gmon"><canvas data-kind="neuron" width="128" height="72"></canvas></div><img data-who="moa" data-mood="sparkle" alt=""></div><figcaption class="gcap"><b>1교시 · 뉴런 한 개 (노트 1·2장)</b><span>PIXEL LAB · PERIOD 1 — 딥러닝이 무엇인지, 뉴런 하나가 무엇을 계산하는지 봅니다.</span></figcaption></figure></div>
+<div class="wrap"><figure class="gscene atlas" data-img="sc_period1" role="img" aria-label="도감 그림에 입력 셀 세 개가 출력 셀 하나로 이어져 있고, 시아와 조수 하루, 모아가 지켜봅니다"><div class="gst"><img data-who="sia" data-mood="think" alt=""><img data-who="asst" data-mood="firm" class="opt" alt=""><div class="adiag" data-net="neuron"></div><img data-who="moa" data-mood="sparkle" alt=""></div><figcaption class="gcap"><b>1교시 · 뉴런 한 개 (노트 1·2장)</b><span>딥러닝이 무엇인지, 뉴런 하나가 무엇을 계산하는지 봅니다.</span></figcaption></figure></div>
 <section class="level" id="r1">
 <div class="wrap">
   <div class="lvhead">
@@ -676,7 +714,7 @@ nav.top{background:rgba(255,255,255,.92);border-bottom:1px solid var(--rule)}
 </section>
 
 <!-- ===== 2교시 ===== -->
-<div class="wrap"><figure class="gscene" data-img="sc_period2" role="img" aria-label="액자 모니터에 S자 곡선과 꺾인 직선이 번갈아 그려지고, 모아와 초파리 연구원, 시아가 지켜봅니다"><div class="gst"><img data-who="moa" data-mood="think" alt=""><div class="gmon"><canvas data-kind="curve" width="128" height="72"></canvas></div><img data-who="fly" data-mood="magnify" alt=""><img data-who="sia" data-mood="firm" class="opt" alt=""></div><figcaption class="gcap"><b>2교시 · 구부리기 (노트 3장)</b><span>PIXEL LAB · PERIOD 2 — 직선을 구부리는 규칙 다섯 가지와 쓰는 자리를 정리합니다.</span></figcaption></figure></div>
+<div class="wrap"><figure class="gscene atlas" data-img="sc_period2" role="img" aria-label="도감 그림에 입력 셀 셋, 은닉 셀 넷, 출력 셀 둘이 이어져 있고, 모아와 초파리 연구원, 시아가 지켜봅니다"><div class="gst"><img data-who="moa" data-mood="think" alt=""><div class="adiag" data-net="curve"></div><img data-who="fly" data-mood="magnify" alt=""><img data-who="sia" data-mood="firm" class="opt" alt=""></div><figcaption class="gcap"><b>2교시 · 구부리기 (노트 3장)</b><span>직선을 구부리는 규칙 다섯 가지와 쓰는 자리를 정리합니다.</span></figcaption></figure></div>
 <section class="level" id="r2">
 <div class="wrap">
   <div class="lvhead">
@@ -756,7 +794,7 @@ nav.top{background:rgba(255,255,255,.92);border-bottom:1px solid var(--rule)}
 </section>
 
 <!-- ===== 3교시 ===== -->
-<div class="wrap"><figure class="gscene" data-img="sc_period3" role="img" aria-label="액자 모니터에서 점 하나가 골짜기 모양 곡선을 따라 아래로 내려가고, 시아와 조수 하루, 모아가 지켜봅니다"><div class="gst"><img data-who="sia" data-mood="firm" alt=""><div class="gmon"><canvas data-kind="descent" width="128" height="72"></canvas></div><img data-who="asst" data-mood="report" alt=""><img data-who="moa" data-mood="cheer" class="opt" alt=""></div><figcaption class="gcap"><b>3교시 · 틀린 만큼 고치기 (노트 4·5장)</b><span>PIXEL LAB · PERIOD 3 — 앞으로 계산하고, 벌점을 재고, 거꾸로 돌아가 고칩니다.</span></figcaption></figure></div>
+<div class="wrap"><figure class="gscene atlas" data-img="sc_period3" role="img" aria-label="도감 그림에서 신호가 앞으로 흐른 뒤 빨간 고리가 뒤에서 앞으로 되돌아오고, 시아와 조수 하루, 모아가 지켜봅니다"><div class="gst"><img data-who="sia" data-mood="firm" alt=""><div class="adiag" data-net="descent"></div><img data-who="asst" data-mood="report" alt=""><img data-who="moa" data-mood="cheer" class="opt" alt=""></div><figcaption class="gcap"><b>3교시 · 틀린 만큼 고치기 (노트 4·5장)</b><span>앞으로 계산하고, 벌점을 재고, 거꾸로 돌아가 고칩니다.</span></figcaption></figure></div>
 <section class="level" id="r3">
 <div class="wrap">
   <div class="lvhead">
@@ -864,7 +902,7 @@ nav.top{background:rgba(255,255,255,.92);border-bottom:1px solid var(--rule)}
 </section>
 
 <!-- ===== 4교시 ===== -->
-<div class="wrap"><figure class="gscene" data-img="sc_period4" role="img" aria-label="액자 모니터에 내려가는 선과 내려가다 다시 올라가는 선이 그려지고, 모아와 주판봇, 시아가 지켜봅니다"><div class="gst"><img data-who="moa" data-mood="report" alt=""><div class="gmon"><canvas data-kind="stop" width="128" height="72"></canvas></div><img data-who="robo" data-mood="calc" alt=""><img data-who="sia" data-mood="doze" class="opt" alt=""></div><figcaption class="gcap"><b>4교시 · 학습 요령 (노트 5·6·10장)</b><span>PIXEL LAB · PERIOD 4 — 에폭과 배치를 세고, 너무 외운 모형을 멈추는 때를 찾습니다.</span></figcaption></figure></div>
+<div class="wrap"><figure class="gscene atlas" data-img="sc_period4" role="img" aria-label="도감 그림에 은닉 셀 몇 개가 꺼진 채 X 표시가 되어 있고, 모아와 주판봇, 시아가 지켜봅니다"><div class="gst"><img data-who="moa" data-mood="report" alt=""><div class="adiag" data-net="stop"></div><img data-who="robo" data-mood="calc" alt=""><img data-who="sia" data-mood="doze" class="opt" alt=""></div><figcaption class="gcap"><b>4교시 · 학습 요령 (노트 5·6·10장)</b><span>에폭과 배치를 세고, 너무 외운 모형을 멈추는 때를 찾습니다.</span></figcaption></figure></div>
 <section class="level" id="r4">
 <div class="wrap">
   <div class="lvhead">
@@ -941,7 +979,7 @@ nav.top{background:rgba(255,255,255,.92);border-bottom:1px solid var(--rule)}
 </section>
 
 <!-- ===== 5교시 ===== -->
-<div class="wrap"><figure class="gscene" data-img="sc_period5" role="img" aria-label="액자 모니터에서 노란 창이 숫자판 위를 한 칸씩 옮겨 다니고, 시아와 초파리 연구원, 모아가 지켜봅니다"><div class="gst"><img data-who="sia" data-mood="explain" alt=""><div class="gmon"><canvas data-kind="scan" width="128" height="72"></canvas></div><img data-who="fly" data-mood="magnify" alt=""><img data-who="moa" data-mood="shock" class="opt" alt=""></div><figcaption class="gcap"><b>5교시 · 사진은 훑는다 (노트 7·8·10장)</b><span>PIXEL LAB · PERIOD 5 — 돋보기로 훑는 계산을 노트의 예제로 검산합니다.</span></figcaption></figure></div>
+<div class="wrap"><figure class="gscene atlas" data-img="sc_period5" role="img" aria-label="도감 그림에서 분홍색 합성곱·풀링 셀이 가까운 셀끼리만 이어져 있고, 시아와 초파리 연구원, 모아가 지켜봅니다"><div class="gst"><img data-who="sia" data-mood="explain" alt=""><div class="adiag" data-net="scan"></div><img data-who="fly" data-mood="magnify" alt=""><img data-who="moa" data-mood="shock" class="opt" alt=""></div><figcaption class="gcap"><b>5교시 · 사진은 훑는다 (노트 7·8·10장)</b><span>돋보기로 훑는 계산을 노트의 예제로 검산합니다.</span></figcaption></figure></div>
 <section class="level" id="r5">
 <div class="wrap">
   <div class="lvhead">
@@ -1023,7 +1061,7 @@ nav.top{background:rgba(255,255,255,.92);border-bottom:1px solid var(--rule)}
 </section>
 
 <!-- ===== 6교시 ===== -->
-<div class="wrap"><figure class="gscene" data-img="sc_period6" role="img" aria-label="액자 모니터에서 네모 칸들이 왼쪽에서 오른쪽으로 이어지며 쪽지를 넘기고, 모아와 주판봇, 시아가 지켜봅니다"><div class="gst"><img data-who="moa" data-mood="tea" alt=""><div class="gmon"><canvas data-kind="seq" width="128" height="72"></canvas></div><img data-who="robo" data-mood="calc" alt=""><img data-who="sia" data-mood="think" class="opt" alt=""></div><figcaption class="gcap"><b>6교시 · 순서는 기억한다 (노트 9·10장)</b><span>PIXEL LAB · PERIOD 6 — 기억 쪽지를 넘기는 방식과 한꺼번에 보는 방식을 견줍니다.</span></figcaption></figure></div>
+<div class="wrap"><figure class="gscene atlas" data-img="sc_period6" role="img" aria-label="도감 그림에서 파란 기억 셀마다 자기에게 돌아오는 고리가 달려 있고, 모아와 주판봇, 시아가 지켜봅니다"><div class="gst"><img data-who="moa" data-mood="tea" alt=""><div class="adiag" data-net="seq"></div><img data-who="robo" data-mood="calc" alt=""><img data-who="sia" data-mood="think" class="opt" alt=""></div><figcaption class="gcap"><b>6교시 · 순서는 기억한다 (노트 9·10장)</b><span>기억 쪽지를 넘기는 방식과 한꺼번에 보는 방식을 견줍니다.</span></figcaption></figure></div>
 <section class="level" id="r6">
 <div class="wrap">
   <div class="lvhead">
@@ -1104,7 +1142,7 @@ nav.top{background:rgba(255,255,255,.92);border-bottom:1px solid var(--rule)}
 </section>
 
 <!-- ===== 종례 모의고사 ===== -->
-<div class="wrap"><figure class="gscene" data-img="sc_final" role="img" aria-label="액자 모니터에 시험지와 체크 표시가 하나씩 나타나고, 박사와 시아, 모아, 조수 하루가 서 있습니다"><div class="gst"><img data-who="sia" data-mood="firm" alt=""><img data-who="moa" data-mood="cheer" class="opt" alt=""><div class="gmon"><canvas data-kind="exam" width="128" height="72"></canvas></div><img data-who="doc" data-mood="judge" alt=""><img data-who="asst" data-mood="smile" class="opt" alt=""></div><figcaption class="gcap"><b>종례 · 모의고사 열 문제 (노트 11장)</b><span>PIXEL LAB · FINAL — 설명은 다시 하지 않습니다. 문제와 한 줄 답만 있습니다.</span></figcaption></figure></div>
+<div class="wrap"><figure class="gscene atlas gwide" data-img="sc_final" role="img" aria-label="도감 그림에 여섯 교시의 구조 그림이 나란히 놓여 있고, 박사와 시아, 모아, 조수 하루가 서 있습니다"><div class="gst"><img data-who="sia" data-mood="firm" alt=""><img data-who="moa" data-mood="cheer" class="opt" alt=""><div class="adiag" data-net="exam"></div><img data-who="doc" data-mood="judge" alt=""><img data-who="asst" data-mood="smile" class="opt" alt=""></div><figcaption class="gcap"><b>종례 · 모의고사 열 문제 (노트 11장)</b><span>설명은 다시 하지 않습니다. 문제와 한 줄 답만 있습니다.</span></figcaption></figure></div>
 <section class="level" id="final">
 <div class="wrap">
   <div class="lvhead">
@@ -1235,7 +1273,7 @@ nav.top{background:rgba(255,255,255,.92);border-bottom:1px solid var(--rule)}
     <li>3교시의 입력 2, 가중치 0.5, 정답 3과 대결의 골짜기 L = (w − 3)² — 손으로 고른 설명용 모형</li>
     <li>4교시의 훈련·검증 벌점 곡선 — 식으로 만든 도식. 실제 학습 기록이 아닙니다</li>
     <li>6교시의 곱하는 값과 차례 수 — 예시값. 실제 신경망에서는 차례마다 값이 다릅니다</li>
-    <li>첫 화면과 교시 머리의 도트 그림 — 코드로 그린 도식</li>
+    <li>첫 화면과 교시 머리의 신경망 구조 그림 — <a href="https://adminmrobo.github.io/neural_network_atlas/0_neural_network_essence.html">신경망 도감</a>의 세포 색과 그리기 방식을 따라 코드로 그린 도식. 셀 수와 선은 구조를 보이기 위한 것이고 실제 모형의 크기가 아닙니다</li>
     <li>5교시의 5×5 입력과 3×3 돋보기, 풀링 예제, 4교시의 1000 ÷ 100 — 원 노트의 예제를 옮기고 검산한 값</li>
   </ul>
   <h4>원 노트와 다르게 쓴 곳</h4>
@@ -1308,9 +1346,9 @@ function fit(c,h){var d=window.devicePixelRatio||1, w=c.parentElement.clientWidt
   var x=c.getContext('2d'); x.setTransform(d,0,0,d,0,0); return w;}
 function stamp(ctx,W,txt){ctx.save(); ctx.font='700 11px "IBM Plex Sans KR",system-ui,sans-serif';
   var tw=ctx.measureText(txt).width+16, x=W-tw-8, y=8;
-  ctx.fillStyle='rgba(241,182,70,.14)'; ctx.strokeStyle='rgba(241,182,70,.7)';
+  ctx.fillStyle='rgba(241,182,70,.22)'; ctx.strokeStyle='rgba(180,99,12,.6)';
   ctx.beginPath(); if(ctx.roundRect) ctx.roundRect(x,y,tw,20,10); else ctx.rect(x,y,tw,20); ctx.fill(); ctx.stroke();
-  ctx.fillStyle='#f1b646'; ctx.textAlign='left'; ctx.fillText(txt,x+8,y+14); ctx.restore();}
+  ctx.fillStyle='#8a5a00'; ctx.textAlign='left'; ctx.fillText(txt,x+8,y+14); ctx.restore();}
 function rr(x,X,Y,W,H,R){x.beginPath(); if(x.roundRect) x.roundRect(X,Y,W,H,R); else x.rect(X,Y,W,H);}
 function pct(v){return Math.round(v*100)+'%';}
 function f2(v){return v.toFixed(2);}
@@ -1412,56 +1450,64 @@ function sprite(who,mood,cap){var d=document.createElement('div');d.className='m
 function bars(list){return list.map(function(a){return '<div class="bar"><span>'+a[0]+'</span><div class="track"><div class="fill" style="width:'+Math.max(0,Math.min(100,a[2]*100))+'%;background:'+a[1]+'"></div></div><span class="num">'+a[3]+'</span></div>';}).join('');}
 
 
-var C={g:'#5ee39c',r:'#f0604d',a:'#f1b646',i:'#82b8ff',m:'#9d9bb8',t:'#eceaf3',s:'#d672d6',sia:'#c9c9d6',moa:'#e8c48a'};
+var C={g:'#2f8f0e',r:'#d2470a',a:'#b4630c',i:'#1e55c8',m:'#5b6874',t:'#16212b',s:'#b03fae',line:'#c9d2da'};
 function n2(v){return (Math.abs(v)<1e-9?0:v).toFixed(2).replace('-','−');}
 function n1(v){return (Math.abs(v)<1e-9?0:v).toFixed(1).replace('-','−');}
 function ng(v){var a=Math.abs(v);if(a<1e-9)return '0';if(Math.abs(v-Math.round(v))<1e-9&&a<1000)return String(Math.round(v)).replace('-','−');if(a>=1000)return Math.round(v).toLocaleString('ko-KR').replace('-','−');if(a>=10)return v.toFixed(1).replace('-','−');if(a>=0.01)return v.toFixed(2).replace('-','−');return v.toPrecision(2).replace('-','−').replace(/e-(\d+)/,' × 10^−$1');}
 function tp(s){return bat(s.charAt(s.length-1))?'은':'는';}
 
-/* ---------- 게임 화면 (교시 머리 · 표지): 128×72 도트 캔버스 ---------- */
-(function(){var W=128,H=72;
-  function px(x,X,Y,s,c){x.fillStyle=c;x.fillRect(Math.round(X),Math.round(Y),s,s);}
-  function bg(x,c){x.fillStyle=c||'#141a33';x.fillRect(0,0,W,H);}
-  function ln(x,x1,y1,x2,y2,c){x.strokeStyle=c;x.lineWidth=1;x.beginPath();x.moveTo(x1+.5,y1+.5);x.lineTo(x2+.5,y2+.5);x.stroke();}
-  function star(x,X,Y){x.fillStyle='#f1e08a';x.fillRect(X,Y-2,1,5);x.fillRect(X-2,Y,5,1);}
-  var L=[[20,[18,36,54]],[52,[12,28,44,60]],[84,[12,28,44,60]],[112,[26,46]]];
-  function net(x,t,ph){for(var a=0;a<L.length-1;a++)L[a][1].forEach(function(y1){L[a+1][1].forEach(function(y2){ln(x,L[a][0],y1,L[a+1][0],y2,'rgba(130,184,255,.22)');});});
-    L.forEach(function(l,a){l[1].forEach(function(y,k){var on=(ph===a);px(x,l[0]-3,y-3,7,on?'#f1b646':(a===0?'#82b8ff':(a===3?'#5ee39c':'#b07cff')));});});}
-  var K={
-   net:function(x,t){bg(x,'#1d2a5a');var ph=Math.floor(t*2)%8;net(x,t,ph<4?ph:7-ph);star(x,8,8);star(x,122,62);
-     x.fillStyle=ph<4?'#5ee39c':'#f0604d';x.fillRect(ph<4?10:100,66,18,2);},
-   neuron:function(x,t){bg(x);var ys=[16,36,56],k=Math.floor(t*2)%4;ys.forEach(function(y,i){ln(x,22,y,70,36,i===k?'#f1b646':'rgba(130,184,255,.4)');px(x,16,y-4,9,'#82b8ff');});
-     px(x,64,28,17,k===3?'#f1b646':'#b07cff');ln(x,82,36,108,36,k===3?'#f1b646':'rgba(94,227,156,.6)');px(x,106,31,11,'#5ee39c');},
-   curve:function(x,t){bg(x);ln(x,10,36,118,36,'#363a52');ln(x,64,6,64,66,'#363a52');var m=Math.floor(t/2.5)%2;
-     for(var X=10;X<118;X++){var z=(X-64)/9,v=m?Math.max(0,z)/6:1/(1+Math.exp(-z));px(x,X,m?(36-v*30):(62-v*52),2,m?'#5ee39c':'#ff86b8');}},
-   descent:function(x,t){bg(x);for(var X=8;X<120;X++){var u=(X-64)/56;px(x,X,60-u*u*50,2,'#82b8ff');}
-     var s=(t*0.5)%1,u2=-0.9*Math.pow(0.55,s*6);px(x,64+u2*56-2,60-u2*u2*50-6,5,'#f1b646');px(x,62,62,5,'#5ee39c');},
-   stop:function(x,t){bg(x);ln(x,10,62,120,62,'#363a52');var lim=10+Math.floor((t*30)%130);
-     for(var X=10;X<120&&X<lim;X++){var e=(X-10)/2.2,tr=0.15+0.85*Math.exp(-e/6),va=tr+0.0004*e*e;px(x,X,60-(1-tr)*48,2,'#82b8ff');px(x,X,60-(1-Math.min(1.1,va))*48,2,'#f0604d');}
-     ln(x,49,8,49,62,'#f1b646');},
-   scan:function(x,t){bg(x);var s=9,ox=14,oy=13,n=Math.floor(t*1.6)%9,wi=Math.floor(n/3),wj=n%3,O=DL.conv(DL.X5,DL.K3),i,j;
-     for(i=0;i<5;i++)for(j=0;j<5;j++)px(x,ox+j*s,oy+i*s,s-1,DL.X5[i][j]?'#eceaf3':'rgba(255,255,255,.07)');
-     x.strokeStyle='#f1b646';x.lineWidth=2;x.strokeRect(ox+wj*s-1,oy+wi*s-1,s*3+1,s*3+1);
-     for(var q=0;q<=n;q++){var v=O[Math.floor(q/3)][q%3];px(x,78+(q%3)*13,18+Math.floor(q/3)*13,12,v>0?'rgba(94,227,156,'+(0.3+0.22*v)+')':(v<0?'rgba(240,96,77,'+(0.3+0.22*-v)+')':'rgba(157,155,184,.25)'));}},
-   seq:function(x,t){bg(x);var k=Math.floor(t*1.5)%5;for(var i=0;i<5;i++){var X=10+i*23;px(x,X,30,15,i===k?'#f1b646':'#b07cff');px(x,X+4,54,7,'#5ee39c');ln(x,X+7,53,X+7,46,'rgba(94,227,156,.6)');
-       if(i<4)ln(x,X+16,37,X+22,37,i<k?'#f1b646':'rgba(130,184,255,.5)');px(x,X+4,12,7,i<=k?'rgba(255,134,184,'+(1-0.18*(k-i))+')':'rgba(255,255,255,.08)');}},
-   exam:function(x,t){bg(x,'#1d2a5a');x.fillStyle='#f4efe6';x.fillRect(34,6,60,60);var k=Math.floor(t*1.5)%7;
-     for(var i=0;i<6;i++){x.fillStyle='#9d9bb8';x.fillRect(48,12+i*9,38,2);if(i<k){x.fillStyle='#5ee39c';x.fillRect(39,13+i*9,2,2);x.fillRect(41,15+i*9,2,2);x.fillRect(43,11+i*9,2,4);}else{x.fillStyle='#c9c9d6';x.fillRect(39,11+i*9,5,5);}}
-     star(x,16,14);star(x,112,52);}
-  };
-  $$('.gmon canvas').forEach(function(c){var fn=K[c.dataset.kind],x=c.getContext('2d'),t=0,acc=1;if(!fn)return;x.imageSmoothingEnabled=false;
-    addMod(c,function(dt){t+=dt;acc+=dt;if(dt&&acc<0.12)return;acc=0;fn(x,reduce?1.2:t);});fn(x,1.2);});
-})();
+/* ---------- 신경망 도감 방식의 구조 그림 (neural_network_atlas의 세포 색·표시를 따름) ---------- */
+var ACOL={I:'#F5C518',H:'#5DC21E',O:'#F26A12',R:'#1AA3F0',C:'#1AA3F0',D:'#1AA3F0',K:'#F59CF0',V:'#F59CF0',X:'#FFFFFF'};
+var AMARK={C:'o',V:'o',D:'t',X:'x'};
+function atlasSVG(n){
+  var R=9,gx=n.gx||44,gy=n.gy||27,pad=18,L=n.spec.split('|').map(function(l){var o=[];l.replace(/([A-Z])(\d+)/g,function(_,t,k){for(var i=0;i<+k;i++)o.push(t);});return o;});
+  (n.drop||[]).forEach(function(d){L[d[0]][d[1]]='X';});
+  var maxN=Math.max.apply(null,L.map(function(l){return l.length;})),top=n.loop||n.skip?20:0,lab=n.labels?26:0;
+  var W=pad*2+(L.length-1)*gx+lab,H=pad*2+(maxN-1)*gy+top,nl=L.length;
+  var pos=L.map(function(l,i){return l.map(function(t,j){return {t:t,x:lab+pad+i*gx,y:top+pad+((maxN-l.length)/2+j)*gy,i:i};});});
+  var e='',nd='',bk='';
+  function mode(i){return Array.isArray(n.edges)?n.edges[i]:(n.edges||'full');}
+  for(var i=0;i<nl-1;i++)pos[i].forEach(function(a,ai){pos[i+1].forEach(function(b,bi){var m=mode(i);
+    if(a.t==='X'||b.t==='X')return;
+    if(m==='local'&&Math.abs(a.y-b.y)>gy*1.05)return; if(m==='pair'&&ai!==bi)return;
+    e+='<line class="ae" style="--d:'+i+'" x1="'+a.x+'" y1="'+a.y+'" x2="'+b.x+'" y2="'+b.y+'"/>';});});
+  if(n.skip)for(var s=1;s+2<nl-1;s+=2){var a=pos[s][0],b=pos[s+2][0];e+='<path class="ae" d="M'+a.x+' '+(a.y-R)+'Q'+((a.x+b.x)/2)+' '+(a.y-R-30)+' '+b.x+' '+(b.y-R)+'"/>';}
+  pos.forEach(function(l){l.forEach(function(p){
+    if(n.loop&&'RCD'.indexOf(p.t)>=0)e+='<path class="ae" d="M'+(p.x-5)+' '+(p.y-R+1)+'C'+(p.x-9)+' '+(p.y-R-14)+' '+(p.x+9)+' '+(p.y-R-14)+' '+(p.x+5)+' '+(p.y-R+1)+'"/>';
+    var g='<g class="an" style="--d:'+p.i+'"><circle cx="'+p.x+'" cy="'+p.y+'" r="'+R+'" fill="'+ACOL[p.t]+'"'+(p.t==='X'?' stroke="#9AA7B3" stroke-dasharray="3 2"':'')+'/>';
+    if(AMARK[p.t]==='o')g+='<circle cx="'+p.x+'" cy="'+p.y+'" r="'+(R-4)+'" fill="none" stroke="#1a1a1a" stroke-width="1.2"/>';
+    if(AMARK[p.t]==='t')g+='<path d="M'+p.x+' '+(p.y-4.5)+'L'+(p.x+4.5)+' '+(p.y+3.5)+'L'+(p.x-4.5)+' '+(p.y+3.5)+'Z" fill="none" stroke="#1a1a1a" stroke-width="1.2"/>';
+    if(AMARK[p.t]==='x')g+='<path d="M'+(p.x-4)+' '+(p.y-4)+'L'+(p.x+4)+' '+(p.y+4)+'M'+(p.x+4)+' '+(p.y-4)+'L'+(p.x-4)+' '+(p.y+4)+'" stroke="#9AA7B3" stroke-width="1.4"/>';
+    nd+=g+'</g>';
+    if(n.back&&p.t!=='X')bk+='<circle class="ab" style="--d:'+(nl-1-p.i)+'" cx="'+p.x+'" cy="'+p.y+'" r="'+(R+3)+'"/>';});});
+  var tx='';(n.labels||[]).forEach(function(t,j){var p=pos[0][j];if(p)tx+='<text x="'+(p.x-R-5)+'" y="'+(p.y+4)+'" text-anchor="end" class="at">'+t+'</text>';});
+  return '<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-hidden="true" class="'+(n.back?'hasback':'')+'" style="--n:'+nl+'">'+e+nd+bk+tx+'</svg>';
+}
+var ANETS={
+  neuron:{spec:'I3|O1',gx:86,gy:30,labels:['x₁','x₂','x₃']},
+  curve:{spec:'I3|H4|O2',gx:66},
+  descent:{spec:'I3|H4|H4|O2',gx:56,back:true},
+  stop:{spec:'I3|H5|H5|O2',gx:56,drop:[[1,1],[1,3],[2,0],[2,4]]},
+  scan:{spec:'I5|K5|V4|K3|V2|H3|O2',gx:40,edges:['local','local','local','local','full','full']},
+  seq:{spec:'I3|C3|C3|O3',gx:58,loop:true}
+};
+var ADASH=[['neuron','1교시','뉴런 한 개','#r1'],['curve','2교시','구부리기','#r2'],['descent','3교시','틀린 만큼 고치기','#r3'],['stop','4교시','학습 요령','#r4'],['scan','5교시','사진은 훑는다','#r5'],['seq','6교시','순서는 기억한다','#r6']];
+var ALEG=[['I','입력 셀'],['H','은닉 셀'],['O','출력 셀'],['C','기억 셀'],['V','합성곱·풀링'],['X','꺼 둔 셀']];
+function atlasDash(){return '<div class="adash">'+ADASH.map(function(a){return '<a class="acard" href="'+a[3]+'"><span>'+a[1]+'</span>'+atlasSVG(ANETS[a[0]])+'<b>'+a[2]+'</b></a>';}).join('')+'</div>';}
+function atlasLegend(){return '<div class="aleg">'+ALEG.map(function(a){return '<span>'+atlasSVG({spec:(a[0]==='X'?'H1':a[0]+'1'),drop:a[0]==='X'?[[0,0]]:null})+a[1]+'</span>';}).join('')+'</div>';}
+
+$$('.adiag').forEach(function(d){var k=d.dataset.net;d.innerHTML=(k==='net'||k==='exam')?atlasDash():atlasSVG(ANETS[k]);});
+$$('.aleghere').forEach(function(d){d.innerHTML=atlasLegend();});
 
 /* ---------- 첫 화면: 앞으로 계산하고 거꾸로 고친다 ---------- */
 (function(){var c=$('#cHero'),x=c.getContext('2d'),t=0;
   var Ls=[3,4,4,2];
   addMod(c,function(dt){t+=dt;var W=fit(c,230),H=230;x.clearRect(0,0,W,H);var tt=reduce?1.5:t,ph=(tt*0.9)%8,fwd=ph<4,pos=fwd?ph:8-ph;
     var P=Ls.map(function(n,a){var X=40+a*(W-80)/3,o=[];for(var k=0;k<n;k++)o.push([X,H/2+(k-(n-1)/2)*42]);return o;});
-    for(var a=0;a<3;a++)P[a].forEach(function(p){P[a+1].forEach(function(q){var hot=Math.abs(pos-(a+0.5))<0.5;x.strokeStyle=hot?(fwd?'rgba(94,227,156,.75)':'rgba(240,96,77,.75)'):'rgba(157,155,184,.22)';x.lineWidth=hot?1.6:1;x.beginPath();x.moveTo(p[0],p[1]);x.lineTo(q[0],q[1]);x.stroke();});});
-    P.forEach(function(l,a){l.forEach(function(p){var hot=Math.abs(pos-a)<0.5;x.beginPath();x.arc(p[0],p[1],11,0,Math.PI*2);x.fillStyle=hot?(fwd?C.g:C.r):(a===0?'#31456f':(a===3?'#2c5a45':'#463a6a'));x.fill();x.strokeStyle='rgba(236,234,243,.5)';x.lineWidth=1;x.stroke();});});
+    for(var a=0;a<3;a++)P[a].forEach(function(p){P[a+1].forEach(function(q){var hot=Math.abs(pos-(a+0.5))<0.5;x.strokeStyle=hot?(fwd?'rgba(30,85,200,.8)':'rgba(210,71,10,.8)'):'#c9d2da';x.lineWidth=hot?1.6:1;x.beginPath();x.moveTo(p[0],p[1]);x.lineTo(q[0],q[1]);x.stroke();});});
+    P.forEach(function(l,a){l.forEach(function(p){var hot=Math.abs(pos-a)<0.5;x.beginPath();x.arc(p[0],p[1],11,0,Math.PI*2);x.fillStyle=a===0?'#F5C518':(a===3?'#F26A12':'#5DC21E');x.fill();if(hot){x.strokeStyle=fwd?C.i:C.r;x.lineWidth=3;x.stroke();}});});
     x.font='700 12px '+FONT;x.fillStyle=C.m;x.textAlign='center';['입력층','은닉층','은닉층','출력층'].forEach(function(s,a){x.fillText(s,P[a][0][0],H-10);});
-    x.textAlign='left';x.fillStyle=fwd?C.g:C.r;x.font='700 13px '+FONT;x.fillText(fwd?'→ 앞으로 계산 (순전파)':'← 벌점을 거꾸로 (역전파)',12,20);
+    x.textAlign='left';x.fillStyle=fwd?C.i:C.r;x.font='700 13px '+FONT;x.fillText(fwd?'→ 앞으로 계산 (순전파)':'← 벌점을 거꾸로 (역전파)',12,20);
     stamp(x,W,'도식');});
 })();
 
@@ -1488,14 +1534,14 @@ function tp(s){return bat(s.charAt(s.length-1))?'은':'는';}
 
 /* ---------- 2교시: 활성화 함수 ---------- */
 (function(){var p=P(2),c=$('#c2'),x=c.getContext('2d'),cur='sig';
-  var COLS={sig:'#ff86b8',tanh:C.i,relu:C.g,leaky:C.a};
+  var COLS={sig:'#cf3d79',tanh:C.i,relu:C.g,leaky:C.a};
   function draw(){var A=DL.ACT[cur],z=+$('#z2').value,v=A.f(z),W=fit(c,240),H=240,L=44,R=W-16,T=20,B=H-30;
     function sx(u){return L+(u+5)/10*(R-L);}function sy(u){return B-(u-A.lo)/(A.hi-A.lo)*(B-T);}
-    x.clearRect(0,0,W,H);x.strokeStyle='rgba(157,155,184,.5)';x.lineWidth=1;x.beginPath();x.moveTo(L,sy(0));x.lineTo(R,sy(0));x.moveTo(sx(0),T);x.lineTo(sx(0),B);x.stroke();
+    x.clearRect(0,0,W,H);x.strokeStyle='rgba(91,104,116,.6)';x.lineWidth=1;x.beginPath();x.moveTo(L,sy(0));x.lineTo(R,sy(0));x.moveTo(sx(0),T);x.lineTo(sx(0),B);x.stroke();
     x.font='12px '+FONT;x.fillStyle=C.m;x.textAlign='center';[-5,0,5].forEach(function(u){x.fillText(String(u).replace('-','−'),sx(u),B+16);});x.textAlign='right';
-    (cur==='sig'?[0,0.5,1]:(cur==='tanh'?[-1,0,1]:[0,2.5,5])).forEach(function(u){x.fillText(String(u).replace('-','−'),L-6,sy(u)+4);x.strokeStyle='rgba(157,155,184,.15)';x.beginPath();x.moveTo(L,sy(u));x.lineTo(R,sy(u));x.stroke();});
+    (cur==='sig'?[0,0.5,1]:(cur==='tanh'?[-1,0,1]:[0,2.5,5])).forEach(function(u){x.fillText(String(u).replace('-','−'),L-6,sy(u)+4);x.strokeStyle='rgba(91,104,116,.18)';x.beginPath();x.moveTo(L,sy(u));x.lineTo(R,sy(u));x.stroke();});
     x.strokeStyle=COLS[cur];x.lineWidth=2.5;x.beginPath();for(var u=-5;u<=5.001;u+=0.05){var X=sx(u),Y=sy(A.f(u));u===-5?x.moveTo(X,Y):x.lineTo(X,Y);}x.stroke();
-    x.strokeStyle='rgba(241,182,70,.6)';x.setLineDash([4,4]);x.beginPath();x.moveTo(sx(z),B);x.lineTo(sx(z),sy(v));x.lineTo(L,sy(v));x.stroke();x.setLineDash([]);
+    x.strokeStyle='rgba(180,99,12,.75)';x.setLineDash([4,4]);x.beginPath();x.moveTo(sx(z),B);x.lineTo(sx(z),sy(v));x.lineTo(L,sy(v));x.stroke();x.setLineDash([]);
     x.beginPath();x.arc(sx(z),sy(v),6,0,Math.PI*2);x.fillStyle=C.a;x.fill();
     x.textAlign='left';x.fillStyle=C.m;x.fillText('가로: z · 세로: 출력',L+6,T+2);stamp(x,W,'계산한 곡선');
     kp(p.k,[['g',n1(z),'넣은 값 z'],['a',n2(v),A.name+' 출력'],['m',A.range,'나오는 범위']]);
@@ -1507,7 +1553,7 @@ function tp(s){return bat(s.charAt(s.length-1))?'은':'는';}
     if(cur==='leaky')m.push([z<0?'a':'g',z<0?'음수 쪽에도 작은 기울기를 남깁니다. 여기서는 그림이 보이도록 0.1을 썼습니다. 노트의 보기는 0.01입니다.':'양수 쪽은 ReLU와 같습니다. 음수 쪽으로 옮겨 차이를 보세요.']);
     ins(p.ins,m);}
   radio(p.root,'data-fn',function(v){cur=v;draw();});$('#z2').addEventListener('input',draw);addMod(c,function(dt){if(!dt)draw();});draw();
-  var NM=['고양이','강아지','여우'],CL=['#ff86b8',C.i,C.a];
+  var NM=['고양이','강아지','여우'],CL=['#cf3d79',C.i,C.a];
   function sm(){var z=['s1','s2','s3'].map(function(id){return +$('#'+id).value;}),pr=DL.softmax(z);
     $('#sm2').innerHTML=bars(pr.map(function(v,i){return [NM[i],CL[i],v,n2(v)];}))+'<p class="small muted">점수 '+z.map(n1).join(', ')+' → 확률 '+pr.map(n2).join(', ')+' (합 '+n2(pr[0]+pr[1]+pr[2])+')</p>';}
   ['s1','s2','s3'].forEach(function(id){$('#'+id).addEventListener('input',sm);});sm();})();
@@ -1542,7 +1588,7 @@ function tp(s){return bat(s.charAt(s.length-1))?'은':'는';}
   var c=$('#c3b'),x=c.getContext('2d'),yy=1;
   function curve(){var W=fit(c,220),H=220,L=44,R=W-16,T=50,B=H-30;x.clearRect(0,0,W,H);
     function sx(u){return L+u*(R-L);}function sy(v){return B-Math.min(v,3)/3*(B-T);}
-    x.strokeStyle='rgba(157,155,184,.5)';x.lineWidth=1;x.beginPath();x.moveTo(L,B);x.lineTo(R,B);x.moveTo(L,T);x.lineTo(L,B);x.stroke();
+    x.strokeStyle='rgba(91,104,116,.6)';x.lineWidth=1;x.beginPath();x.moveTo(L,B);x.lineTo(R,B);x.moveTo(L,T);x.lineTo(L,B);x.stroke();
     x.font='12px '+FONT;x.fillStyle=C.m;x.textAlign='center';[0,0.5,1].forEach(function(u){x.fillText(String(u),sx(u),B+16);});x.textAlign='right';[0,1,2,3].forEach(function(v){x.fillText(String(v),L-6,sy(v)+4);});
     x.strokeStyle=yy?C.g:C.s;x.lineWidth=2.5;x.beginPath();var first=true;for(var u=0.02;u<=0.981;u+=0.01){var v=yy?-Math.log(u):-Math.log(1-u);if(first){x.moveTo(sx(u),sy(v));first=false;}else x.lineTo(sx(u),sy(v));}x.stroke();
     [0.1,0.5,0.9].forEach(function(u){var v=yy?-Math.log(u):-Math.log(1-u);x.beginPath();x.arc(sx(u),sy(v),4.5,0,Math.PI*2);x.fillStyle=C.a;x.fill();x.fillStyle=C.t;x.textAlign='center';x.fillText(n2(v),sx(u),sy(v)-9);});
@@ -1556,10 +1602,10 @@ function tp(s){return bat(s.charAt(s.length-1))?'은':'는';}
   var c=$('#cDuel'),x=c.getContext('2d');
   function plot(){var W=fit(c,240),H=240,L=50,Rr=W-16,T=50,B=H-30;x.clearRect(0,0,W,H);
     function sx(i){return L+i/N*(Rr-L);}function lg(d){return Math.log(Math.max(d,0.01))/Math.LN10;}function sy(d){return B-(lg(d)+2)/3.5*(B-T);}
-    x.font='12px '+FONT;x.textAlign='right';x.fillStyle=C.m;[0.01,0.1,1,10].forEach(function(d){x.fillText(String(d),L-6,sy(d)+4);x.strokeStyle='rgba(157,155,184,.15)';x.beginPath();x.moveTo(L,sy(d));x.lineTo(Rr,sy(d));x.stroke();});
+    x.font='12px '+FONT;x.textAlign='right';x.fillStyle=C.m;[0.01,0.1,1,10].forEach(function(d){x.fillText(String(d),L-6,sy(d)+4);x.strokeStyle='rgba(91,104,116,.18)';x.beginPath();x.moveTo(L,sy(d));x.lineTo(Rr,sy(d));x.stroke();});
     x.textAlign='center';[0,5,10,15,20].forEach(function(i){x.fillText(i+'걸음',sx(i),B+16);});
-    [[F,'#ef5b5b'],[R,'#57d0dc']].forEach(function(a){x.strokeStyle=a[1];x.lineWidth=2.2;x.beginPath();a[0].forEach(function(w,i){var Y=sy(Math.abs(w-3));i?x.lineTo(sx(i),Y):x.moveTo(sx(i),Y);});x.stroke();});
-    x.textAlign='left';x.fillStyle=C.m;x.fillStyle='#ef5b5b';x.fillText('━ 초파리 0.1',L,T-10);x.fillStyle='#57d0dc';x.fillText('━ 주판봇 1.05',L+92,T-10);x.fillStyle=C.m;x.textAlign='right';x.fillText('세로: 바닥까지 남은 거리',Rr,B-6);stamp(x,W,'설명용 모형 · 실제 데이터 아님');}
+    [[F,'#c92c2c'],[R,'#0b7f8d']].forEach(function(a){x.strokeStyle=a[1];x.lineWidth=2.2;x.beginPath();a[0].forEach(function(w,i){var Y=sy(Math.abs(w-3));i?x.lineTo(sx(i),Y):x.moveTo(sx(i),Y);});x.stroke();});
+    x.textAlign='left';x.fillStyle=C.m;x.fillStyle='#c92c2c';x.fillText('━ 초파리 0.1',L,T-10);x.fillStyle='#0b7f8d';x.fillText('━ 주판봇 1.05',L+92,T-10);x.fillStyle=C.m;x.textAlign='right';x.fillText('세로: 바닥까지 남은 거리',Rr,B-6);stamp(x,W,'설명용 모형 · 실제 데이터 아님');}
   radio(root,'data-guess',function(v){guess=v;});
   $('.reveal',root).addEventListener('click',function(){open=!open;root.classList.toggle('open',open);this.textContent=open?'다시 닫기':'결과 보기';$('.dcv',root).hidden=!open;
     var fi=$('.head .fly img',root),ri=$$('.head img',root)[1];
@@ -1575,15 +1621,15 @@ function tp(s){return bat(s.charAt(s.length-1))?'은':'는';}
 
 /* ---------- 4교시: 조기 종료 · 배치 ---------- */
 (function(){var p=P(4),c=$('#c4'),x=c.getContext('2d'),bs=100,MAXE=50,NDATA=1000;
-  function draw(){var pat=+$('#pat4').value,E=DL.earlyStop(pat,MAXE),W=fit(c,250),H=250,L=44,R=W-16,T=22,B=H-30;x.clearRect(0,0,W,H);
+  function draw(){var pat=+$('#pat4').value,E=DL.earlyStop(pat,MAXE),W=fit(c,270),H=270,L=44,R=W-16,T=66,B=H-30;x.clearRect(0,0,W,H);
     function sx(e){return L+(e-1)/(MAXE-1)*(R-L);}function sy(v){return B-Math.min(v,1.3)/1.3*(B-T);}
-    x.strokeStyle='rgba(157,155,184,.5)';x.lineWidth=1;x.beginPath();x.moveTo(L,B);x.lineTo(R,B);x.moveTo(L,T);x.lineTo(L,B);x.stroke();
+    x.strokeStyle='rgba(91,104,116,.6)';x.lineWidth=1;x.beginPath();x.moveTo(L,B);x.lineTo(R,B);x.moveTo(L,T);x.lineTo(L,B);x.stroke();
     x.font='12px '+FONT;x.fillStyle=C.m;x.textAlign='center';[1,10,20,30,40,50].forEach(function(e){x.fillText(e+'',sx(e),B+16);});x.textAlign='right';[0,0.5,1].forEach(function(v){x.fillText(String(v),L-6,sy(v)+4);});
     x.fillStyle='rgba(240,96,77,.07)';x.fillRect(sx(E.stop),T,R-sx(E.stop),B-T);
     [[DL.trainL,C.i],[DL.valL,C.r]].forEach(function(a){x.strokeStyle=a[1];x.lineWidth=2.4;x.beginPath();for(var e=1;e<=MAXE;e++){e===1?x.moveTo(sx(e),sy(a[0](e))):x.lineTo(sx(e),sy(a[0](e)));}x.stroke();});
     x.strokeStyle=C.g;x.setLineDash([3,3]);x.beginPath();x.moveTo(sx(E.best),T);x.lineTo(sx(E.best),B);x.stroke();
     x.strokeStyle=C.a;x.setLineDash([6,4]);x.beginPath();x.moveTo(sx(E.stop),T);x.lineTo(sx(E.stop),B);x.stroke();x.setLineDash([]);
-    x.textAlign='left';x.fillStyle=C.i;x.fillText('━ 훈련 벌점',L+8,T+4);x.fillStyle=C.r;x.fillText('━ 검증 벌점',L+92,T+4);x.fillStyle=C.g;x.fillText('┆ 가장 낮은 곳',L+8,T+20);x.fillStyle=C.a;x.fillText('┆ 멈춘 곳',L+106,T+20);
+    x.textAlign='left';x.fillStyle=C.i;x.fillText('━ 훈련 벌점',L,T-26);x.fillStyle=C.r;x.fillText('━ 검증 벌점',L+84,T-26);x.fillStyle=C.g;x.fillText('┆ 가장 낮은 곳',L,T-10);x.fillStyle=C.a;x.fillText('┆ 멈춘 곳',L+98,T-10);
     x.fillStyle=C.m;x.textAlign='right';x.fillText('가로: 에폭',R,B-6);
     var it=DL.iters(NDATA,bs);
     kp(p.k,[['g',E.best+'에폭','검증 벌점이 가장 낮은 때 ('+n2(E.bestV)+')'],['a',E.stop+'에폭','멈춘 때 · 참는 횟수 '+pat],['r',n2(DL.valL(MAXE)),'50에폭까지 갔을 때 검증 벌점'],['m',it+'번','1에폭의 이터레이션 · 배치 '+bs]]);
@@ -1619,10 +1665,10 @@ function tp(s){return bat(s.charAt(s.length-1))?'은':'는';}
 (function(){var p=P(6),c=$('#c6'),x=c.getContext('2d');
   function draw(){var m=+$('#m6').value,T=+$('#t6').value,v=Math.pow(m,T),W=fit(c,240),H=240,L=40,R=W-14,Tp=54,B=H-30;x.clearRect(0,0,W,H);
     var top=Math.max(1,v),bw=(R-L)/30;
-    x.strokeStyle='rgba(157,155,184,.5)';x.lineWidth=1;x.beginPath();x.moveTo(L,B);x.lineTo(R,B);x.stroke();
-    x.strokeStyle='rgba(241,182,70,.5)';x.setLineDash([4,4]);var y1=B-(1/top)*(B-Tp);x.beginPath();x.moveTo(L,y1);x.lineTo(R,y1);x.stroke();x.setLineDash([]);
+    x.strokeStyle='rgba(91,104,116,.6)';x.lineWidth=1;x.beginPath();x.moveTo(L,B);x.lineTo(R,B);x.stroke();
+    x.strokeStyle='rgba(180,99,12,.7)';x.setLineDash([4,4]);var y1=B-(1/top)*(B-Tp);x.beginPath();x.moveTo(L,y1);x.lineTo(R,y1);x.stroke();x.setLineDash([]);
     x.font='12px '+FONT;x.fillStyle=C.a;x.textAlign='right';x.fillText('1',L-6,y1+4);
-    for(var t=1;t<=30;t++){var h=Math.pow(m,t)/top*(B-Tp);x.fillStyle=t<=T?(m<1?C.i:(m>1?C.r:C.g)):'rgba(157,155,184,.15)';if(t<=T)x.fillRect(L+(t-1)*bw+1,B-Math.max(1,h),bw-2,Math.max(1,h));else x.fillRect(L+(t-1)*bw+1,B-2,bw-2,2);}
+    for(var t=1;t<=30;t++){var h=Math.pow(m,t)/top*(B-Tp);x.fillStyle=t<=T?(m<1?C.i:(m>1?C.r:C.g)):'rgba(91,104,116,.18)';if(t<=T)x.fillRect(L+(t-1)*bw+1,B-Math.max(1,h),bw-2,Math.max(1,h));else x.fillRect(L+(t-1)*bw+1,B-2,bw-2,2);}
     x.fillStyle=C.m;x.textAlign='center';[1,10,20,30].forEach(function(t){x.fillText(t+'',L+(t-0.5)*bw,B+16);});
     x.textAlign='left';x.fillText('가로: 차례 수 · 세로: 남은 신호',L,Tp-12);stamp(x,W,'설명용 모형 · 실제 데이터 아님');
     kp(p.k,[['g',n1(m),'차례마다 곱하는 값'],['m',T+'번','곱한 횟수'],['a',ng(v),'남은 신호 (처음이 1)'],['r',m<1?'사라짐':(m>1?'폭발':'그대로'),'어느 쪽으로 가나']]);
@@ -1678,10 +1724,10 @@ var TYPES={Concept:['개념','#d672d6'],Method:['방법','#5ee39c'],Task:['문�
   function sx(p,W){return 20+(p.x-mnx)/(mxx-mnx+1e-9)*(W-40);} function sy(p,H){return 20+(p.y-mny)/(mxy-mny+1e-9)*(H-40);}
   var hi=null;
   function draw(){var W=fit(c,380), H=380, x=c.getContext('2d'); x.clearRect(0,0,W,H);
-    E.forEach(function(e){var a=P[idx[e.s]],b=P[idx[e.o]]; var h=hi&&(e.s===hi||e.o===hi); x.strokeStyle=h?'rgba(241,182,70,.9)':'rgba(157,155,184,.22)'; x.lineWidth=h?1.8:1;
+    E.forEach(function(e){var a=P[idx[e.s]],b=P[idx[e.o]]; var h=hi&&(e.s===hi||e.o===hi); x.strokeStyle=h?'rgba(180,99,12,.95)':'rgba(91,104,116,.3)'; x.lineWidth=h?1.8:1;
       x.beginPath(); x.moveTo(sx(a,W),sy(a,H)); x.lineTo(sx(b,W),sy(b,H)); x.stroke();});
     P.forEach(function(p){var col=(TYPES[p.n.type]||['','#888'])[1]; x.fillStyle=col; x.beginPath(); x.arc(sx(p,W),sy(p,H),p.n.id===hi?7:4.5,0,Math.PI*2); x.fill();
-      if(p.n.type==='Method'||p.n.id===hi){x.fillStyle='#eceaf3'; x.font='500 10.5px '+FONT; x.textAlign='center'; x.fillText(p.n.label.ko,sx(p,W),sy(p,H)-8);}});}
+      if(p.n.type==='Method'||p.n.id===hi){x.fillStyle='#16212b'; x.font='500 10.5px '+FONT; x.textAlign='center'; x.fillText(p.n.label.ko,sx(p,W),sy(p,H)-8);}});}
   c.addEventListener('pointerdown',function(ev){var rc=c.getBoundingClientRect(), mx=ev.clientX-rc.left, my=ev.clientY-rc.top, W=rc.width, H=380, best=null, bd=400;
     P.forEach(function(p){var dx=sx(p,W)-mx, dy=sy(p,H)-my, d=dx*dx+dy*dy; if(d<bd){bd=d;best=p;}}); if(best){hi=best.n.id; on[best.n.type]=true; $('#kgq').value=''; list(hi); draw();}});
   $('#kglegend').innerHTML=Object.keys(cnt).map(function(k){return TYPES[k]?'<span><span class="kgdot" style="background:'+TYPES[k][1]+'"></span>'+TYPES[k][0]+'</span>':'';}).join('')+'<span>선 = 관계 · 노드를 누르면 목록에서 펼침</span>';

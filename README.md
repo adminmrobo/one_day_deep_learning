@@ -38,7 +38,7 @@ AI 연구실 해설 · 딥러닝 서머리 노트 · 비전공자용
 - 직접 해 보기의 숫자는 페이지 안에서 계산한 **설명용 모형**의 값입니다. 실제 학습 기록이 아닙니다.
 - 대결의 승패는 "벌점이 L = (w − 3)²인 골짜기에서 걸음 폭 0.1과 1.05를 견준" 결과입니다. 걸음 폭 0.5이면 한 걸음에 끝난다는 점도 대결 아래에 적었습니다.
 - 원 노트(IT Hub Official 표시)의 게시 주소와 저자는 확인하지 못했습니다. 참고문헌의 쪽수·절 번호도 원문과 대조하지 않았습니다. 페이지의 「확인 필요 목록」에 모았습니다.
-- 표지와 교시 머리의 게임 화면은 코드로 그린 것입니다. 같은 콘셉트의 그림 지시문은 `docs/COVER_one_day_deep_learning.md`에 있습니다. 로봇은 주판봇만 씁니다.
+- 바탕은 하얀색입니다. 표지와 교시 머리의 신경망 구조 그림은 [신경망 도감](https://adminmrobo.github.io/neural_network_atlas/0_neural_network_essence.html)의 세포 색과 그리기 방식을 따라 코드로 그렸습니다. 표지의 여섯 그림을 누르면 그 교시로 갑니다. 일러스트 표지를 따로 받을 때의 지시문은 `docs/COVER_one_day_deep_learning.md`에 있습니다. 로봇은 주판봇만 씁니다.
 - CNN을 더 자세히 보려면 [얼굴 알아맞히기 게임 — 20칸으로 배우는 CNN](https://adminmrobo.github.io/cnn_face_game_lab/)으로 이어집니다.
 
 ## 파일
@@ -47,6 +47,7 @@ AI 연구실 해설 · 딥러닝 서머리 노트 · 비전공자용
 |---|---|
 | `index.html` | 해설 페이지 (단일 파일, 외부 라이브러리 없음) |
 | `docs/COVER_one_day_deep_learning.md` | 표지·교시 장면 그림 지시문 (표지 1 + 장면 7) |
+| `assets/og_cover.png` · `assets/thumb_cover.webp` | 공유 미리보기(1200×630)와 썸네일(640×336) |
 | `cover_manifest.json` | 표지·온톨로지·언어 현황 (현황판 연결) |
 | `KG_new_ids.json` | 시리즈 등록부에 더할 새 개념 ID |
 
