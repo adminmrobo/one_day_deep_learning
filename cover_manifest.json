@@ -1,0 +1,207 @@
+{
+  "series_ko": "AI 연구실 해설 · 딥러닝 서머리 노트",
+  "title_ko": "하루 만에 끝내는 딥러닝 서머리 노트 — 박사의 쪽지시험 대비",
+  "site_title": "하루 만에 끝내는 딥러닝 서머리 노트 — 박사의 쪽지시험 대비",
+  "site_url": "https://adminmrobo.github.io/one_day_deep_learning/",
+  "ontology": {
+    "pages": [
+      {
+        "path": "index.html",
+        "kg": true,
+        "export": true
+      }
+    ],
+    "files": [
+      "KG_new_ids.json"
+    ]
+  },
+  "i18n": {
+    "langs": [
+      "ko"
+    ],
+    "pages": {
+      "ko": 1
+    },
+    "readme_langs": [
+      "ko"
+    ]
+  },
+  "languages": [
+    "ko"
+  ],
+  "items": [
+    {
+      "id": "cover",
+      "role": "cover",
+      "path": "",
+      "embedded_in": "index.html",
+      "key": "figure.gscene[data-img=cover_one_day_dl]",
+      "size": [
+        1600,
+        900
+      ],
+      "characters": [
+        "doc",
+        "asst",
+        "fly",
+        "jupanbot",
+        "sia",
+        "moa"
+      ],
+      "robot": "jupanbot-v2",
+      "prompt_en": "docs/COVER_one_day_deep_learning.md",
+      "source_of": null,
+      "status": "todo",
+      "note": "지금은 코드로 그린 게임 화면 (액자 모니터 + 캐릭터 팩 표정)"
+    },
+    {
+      "id": "sc_period1",
+      "role": "scene",
+      "path": "",
+      "embedded_in": "index.html",
+      "key": "figure.gscene[data-img=sc_period1]",
+      "size": [
+        1200,
+        800
+      ],
+      "characters": [
+        "sia",
+        "asst",
+        "moa"
+      ],
+      "robot": "jupanbot-v2",
+      "prompt_en": "docs/COVER_one_day_deep_learning.md",
+      "source_of": null,
+      "status": "todo",
+      "note": "지금은 코드로 그린 게임 화면"
+    },
+    {
+      "id": "sc_period2",
+      "role": "scene",
+      "path": "",
+      "embedded_in": "index.html",
+      "key": "figure.gscene[data-img=sc_period2]",
+      "size": [
+        1200,
+        800
+      ],
+      "characters": [
+        "moa",
+        "fly",
+        "sia"
+      ],
+      "robot": "jupanbot-v2",
+      "prompt_en": "docs/COVER_one_day_deep_learning.md",
+      "source_of": null,
+      "status": "todo",
+      "note": "지금은 코드로 그린 게임 화면"
+    },
+    {
+      "id": "sc_period3",
+      "role": "scene",
+      "path": "",
+      "embedded_in": "index.html",
+      "key": "figure.gscene[data-img=sc_period3]",
+      "size": [
+        1200,
+        800
+      ],
+      "characters": [
+        "sia",
+        "asst",
+        "moa"
+      ],
+      "robot": "jupanbot-v2",
+      "prompt_en": "docs/COVER_one_day_deep_learning.md",
+      "source_of": null,
+      "status": "todo",
+      "note": "지금은 코드로 그린 게임 화면"
+    },
+    {
+      "id": "sc_period4",
+      "role": "scene",
+      "path": "",
+      "embedded_in": "index.html",
+      "key": "figure.gscene[data-img=sc_period4]",
+      "size": [
+        1200,
+        800
+      ],
+      "characters": [
+        "moa",
+        "jupanbot",
+        "sia"
+      ],
+      "robot": "jupanbot-v2",
+      "prompt_en": "docs/COVER_one_day_deep_learning.md",
+      "source_of": null,
+      "status": "todo",
+      "note": "지금은 코드로 그린 게임 화면"
+    },
+    {
+      "id": "sc_period5",
+      "role": "scene",
+      "path": "",
+      "embedded_in": "index.html",
+      "key": "figure.gscene[data-img=sc_period5]",
+      "size": [
+        1200,
+        800
+      ],
+      "characters": [
+        "sia",
+        "fly",
+        "moa"
+      ],
+      "robot": "jupanbot-v2",
+      "prompt_en": "docs/COVER_one_day_deep_learning.md",
+      "source_of": null,
+      "status": "todo",
+      "note": "지금은 코드로 그린 게임 화면"
+    },
+    {
+      "id": "sc_period6",
+      "role": "scene",
+      "path": "",
+      "embedded_in": "index.html",
+      "key": "figure.gscene[data-img=sc_period6]",
+      "size": [
+        1200,
+        800
+      ],
+      "characters": [
+        "moa",
+        "jupanbot",
+        "sia"
+      ],
+      "robot": "jupanbot-v2",
+      "prompt_en": "docs/COVER_one_day_deep_learning.md",
+      "source_of": null,
+      "status": "todo",
+      "note": "지금은 코드로 그린 게임 화면"
+    },
+    {
+      "id": "sc_final",
+      "role": "scene",
+      "path": "",
+      "embedded_in": "index.html",
+      "key": "figure.gscene[data-img=sc_final]",
+      "size": [
+        1200,
+        800
+      ],
+      "characters": [
+        "sia",
+        "moa",
+        "doc",
+        "asst"
+      ],
+      "robot": "jupanbot-v2",
+      "prompt_en": "docs/COVER_one_day_deep_learning.md",
+      "source_of": null,
+      "status": "todo",
+      "note": "지금은 코드로 그린 게임 화면"
+    }
+  ],
+  "updated": "2026-11-13"
+}

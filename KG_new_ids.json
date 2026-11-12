@@ -1,0 +1,696 @@
+{
+ "note": "KG_00_registry.json에 더할 항목 (하루 만에 끝내는 딥러닝 서머리 노트). in_registry가 true인 ID는 이미 있으니 pages만 더하면 됩니다.",
+ "updated": "2026-11-13",
+ "entries": [
+  {
+   "id": "lab:question/finish-dl-notes-in-a-day",
+   "type": "Question",
+   "label_ko": "노트 열한 장을 하루에 볼 수 있을까",
+   "label_en": "Can eleven pages of deep learning notes be covered in a day?",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:question/how-to-choose-learning-rate",
+   "type": "Question",
+   "label_ko": "걸음 폭(학습률)은 어떻게 고르나",
+   "label_en": "How should the learning rate be chosen?",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:question/how-attention-computes",
+   "type": "Question",
+   "label_ko": "어텐션은 관련도를 어떻게 계산하나",
+   "label_en": "How does attention compute relevance?",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:question/why-notes-contain-errors",
+   "type": "Question",
+   "label_ko": "정리된 노트의 숫자는 어디까지 믿어도 되나",
+   "label_en": "How far can the numbers in a tidy summary be trusted?",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:concept/deep-learning",
+   "type": "Concept",
+   "label_ko": "딥러닝",
+   "label_en": "Deep learning",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:concept/machine-learning",
+   "type": "Concept",
+   "label_ko": "머신러닝",
+   "label_en": "Machine learning",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:concept/artificial-neuron",
+   "type": "Concept",
+   "label_ko": "뉴런",
+   "label_en": "Artificial neuron",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:concept/weighted-sum",
+   "type": "Concept",
+   "label_ko": "가중합",
+   "label_en": "Weighted sum",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:concept/weight-and-bias",
+   "type": "Concept",
+   "label_ko": "가중치와 편향",
+   "label_en": "Weights and bias",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/activation-function",
+   "type": "Method",
+   "label_ko": "활성화 함수",
+   "label_en": "Activation function",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/sigmoid",
+   "type": "Method",
+   "label_ko": "시그모이드",
+   "label_en": "Sigmoid",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/tanh",
+   "type": "Method",
+   "label_ko": "tanh",
+   "label_en": "Hyperbolic tangent",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/relu",
+   "type": "Method",
+   "label_ko": "ReLU",
+   "label_en": "Rectified linear unit",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/leaky-relu",
+   "type": "Method",
+   "label_ko": "Leaky ReLU",
+   "label_en": "Leaky ReLU",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/softmax",
+   "type": "Method",
+   "label_ko": "소프트맥스",
+   "label_en": "Softmax",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:limitation/linear-stack-stays-linear",
+   "type": "Limitation",
+   "label_ko": "구부리지 않으면 직선이다",
+   "label_en": "A stack of linear layers stays linear",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/forward-propagation",
+   "type": "Method",
+   "label_ko": "순전파",
+   "label_en": "Forward propagation",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:concept/loss-function",
+   "type": "Concept",
+   "label_ko": "손실 함수",
+   "label_en": "Loss function",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:concept/mean-squared-error",
+   "type": "Concept",
+   "label_ko": "평균 제곱 오차",
+   "label_en": "Mean squared error",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:concept/cross-entropy-loss",
+   "type": "Concept",
+   "label_ko": "교차 엔트로피 손실",
+   "label_en": "Cross-entropy loss",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": true
+  },
+  {
+   "id": "lab:method/backpropagation",
+   "type": "Method",
+   "label_ko": "역전파",
+   "label_en": "Backpropagation",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": true
+  },
+  {
+   "id": "lab:concept/chain-rule",
+   "type": "Concept",
+   "label_ko": "연쇄 법칙",
+   "label_en": "Chain rule",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/gradient-descent",
+   "type": "Method",
+   "label_ko": "경사 하강",
+   "label_en": "Gradient descent",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": true
+  },
+  {
+   "id": "lab:concept/learning-rate",
+   "type": "Concept",
+   "label_ko": "학습률",
+   "label_en": "Learning rate",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": true
+  },
+  {
+   "id": "lab:limitation/learning-rate-too-large-diverges",
+   "type": "Limitation",
+   "label_ko": "걸음이 너무 크면 멀어진다",
+   "label_en": "Too large a learning rate diverges",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/adam",
+   "type": "Method",
+   "label_ko": "아담",
+   "label_en": "Adam optimizer",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:concept/epoch-batch-iteration",
+   "type": "Concept",
+   "label_ko": "에폭 · 배치 · 이터레이션",
+   "label_en": "Epoch, batch, iteration",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:concept/train-validation-test-split",
+   "type": "Concept",
+   "label_ko": "훈련 · 검증 · 시험 나누기",
+   "label_en": "Train / validation / test split",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:concept/overfitting",
+   "type": "Concept",
+   "label_ko": "과적합",
+   "label_en": "Overfitting",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": true
+  },
+  {
+   "id": "lab:method/early-stopping",
+   "type": "Method",
+   "label_ko": "조기 종료",
+   "label_en": "Early stopping",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": true
+  },
+  {
+   "id": "lab:method/dropout",
+   "type": "Method",
+   "label_ko": "드롭아웃",
+   "label_en": "Dropout",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/batch-normalization",
+   "type": "Method",
+   "label_ko": "배치 정규화",
+   "label_en": "Batch normalization",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/data-augmentation",
+   "type": "Method",
+   "label_ko": "데이터 증강",
+   "label_en": "Data augmentation",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:limitation/fully-connected-too-many-parameters",
+   "type": "Limitation",
+   "label_ko": "모두 이으면 손잡이가 너무 많다",
+   "label_en": "Fully connected layers need too many parameters for images",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/cnn",
+   "type": "Method",
+   "label_ko": "합성곱 신경망",
+   "label_en": "Convolutional neural network",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": true
+  },
+  {
+   "id": "lab:method/convolution",
+   "type": "Method",
+   "label_ko": "합성곱",
+   "label_en": "Convolution",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/max-pooling",
+   "type": "Method",
+   "label_ko": "최대 풀링",
+   "label_en": "Max pooling",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:concept/conv-output-size",
+   "type": "Concept",
+   "label_ko": "출력 칸 수 공식",
+   "label_en": "Convolution output size",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/residual-connection",
+   "type": "Method",
+   "label_ko": "건너뛰기 연결",
+   "label_en": "Residual (skip) connection",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/transfer-learning",
+   "type": "Method",
+   "label_ko": "전이 학습",
+   "label_en": "Transfer learning",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:limitation/cnn-not-for-order",
+   "type": "Limitation",
+   "label_ko": "훑기는 앞뒤 순서를 기억하지 못한다",
+   "label_en": "Convolution alone does not carry sequence memory",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/rnn",
+   "type": "Method",
+   "label_ko": "순환 신경망",
+   "label_en": "Recurrent neural network",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:limitation/vanishing-exploding-gradient",
+   "type": "Limitation",
+   "label_ko": "기울기 소실과 폭발",
+   "label_en": "Vanishing and exploding gradients",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/lstm",
+   "type": "Method",
+   "label_ko": "LSTM",
+   "label_en": "Long short-term memory",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/gru",
+   "type": "Method",
+   "label_ko": "GRU",
+   "label_en": "Gated recurrent unit",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/transformer",
+   "type": "Method",
+   "label_ko": "트랜스포머",
+   "label_en": "Transformer",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/self-attention",
+   "type": "Method",
+   "label_ko": "셀프 어텐션",
+   "label_en": "Self-attention",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:analogy/admission-score-weighted-sum",
+   "type": "Analogy",
+   "label_ko": "입시 총점 ↔ 가중합",
+   "label_en": "Admission score ↔ weighted sum",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:analogy/shower-knob-gradient-descent",
+   "type": "Analogy",
+   "label_ko": "샤워기 손잡이 ↔ 경사 하강",
+   "label_en": "Shower knob ↔ gradient descent",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:analogy/memorized-answers-overfitting",
+   "type": "Analogy",
+   "label_ko": "기출 답 외우기 ↔ 과적합",
+   "label_en": "Memorized answers ↔ overfitting",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:analogy/telephone-game-rnn",
+   "type": "Analogy",
+   "label_ko": "말 전하기 놀이 ↔ 기억 쪽지",
+   "label_en": "Telephone game ↔ hidden state",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:sim/sim-one-neuron",
+   "type": "Simulation",
+   "label_ko": "뉴런 한 개의 계산",
+   "label_en": "One-neuron calculator",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:sim/sim-activation-curves",
+   "type": "Simulation",
+   "label_ko": "같은 z를 네 가지로 구부리기",
+   "label_en": "Activation function explorer",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:sim/sim-one-step-backprop",
+   "type": "Simulation",
+   "label_ko": "한 걸음을 네 단계로",
+   "label_en": "One training step in four stages",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:sim/sim-early-stopping",
+   "type": "Simulation",
+   "label_ko": "언제 멈출까",
+   "label_en": "Early stopping explorer",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:sim/sim-conv-note-check",
+   "type": "Simulation",
+   "label_ko": "노트의 합성곱 예제 검산",
+   "label_en": "Checking the note's convolution example",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:sim/sim-repeated-multiplication",
+   "type": "Simulation",
+   "label_ko": "같은 수를 거듭 곱하기",
+   "label_en": "Repeated multiplication (vanishing / exploding)",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:sim/sim-learning-rate-duel",
+   "type": "Simulation",
+   "label_ko": "걸음 폭 대결",
+   "label_en": "Learning-rate duel",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:claim/note-conv-example-mismatch",
+   "type": "Claim",
+   "label_ko": "원 노트 7.2의 합성곱 출력은 검산과 아홉 칸 중 일곱 칸이 다르다",
+   "label_en": "The note's convolution example differs from recomputation in 7 of 9 cells",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:claim/lenet-ten-classes",
+   "type": "Claim",
+   "label_ko": "LeNet은 손글씨 숫자 10가지를 분류한다",
+   "label_en": "LeNet classifies ten handwritten digit classes",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:claim/gru-two-gates",
+   "type": "Claim",
+   "label_ko": "GRU의 문은 갱신과 초기화 두 개다",
+   "label_en": "A GRU has two gates: update and reset",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:claim/lstm-three-gates",
+   "type": "Claim",
+   "label_ko": "LSTM의 문은 잊기·입력·출력 세 개다",
+   "label_en": "An LSTM has three gates: forget, input, output",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:claim/transformer-attention-only",
+   "type": "Claim",
+   "label_ko": "트랜스포머는 순환이나 합성곱 없이 어텐션으로 줄을 다룬다",
+   "label_en": "The Transformer relies on attention without recurrence or convolution",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:work/ithub-deep-learning-notes",
+   "type": "Work",
+   "label_ko": "딥러닝 필기 노트 11장 (IT Hub Official)",
+   "label_en": "Deep Learning: Understanding Neural Networks & Intelligent AI Systems (handwritten-style notes)",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:work/lecun1998gradient",
+   "type": "Work",
+   "label_ko": "LeCun 외 (1998)",
+   "label_en": "LeCun et al. (1998)",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:work/hochreiter1997long",
+   "type": "Work",
+   "label_ko": "Hochreiter · Schmidhuber (1997)",
+   "label_en": "Hochreiter & Schmidhuber (1997)",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:work/cho2014learning",
+   "type": "Work",
+   "label_ko": "Cho 외 (2014)",
+   "label_en": "Cho et al. (2014)",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:work/vaswani2017attention",
+   "type": "Work",
+   "label_ko": "Vaswani 외 (2017)",
+   "label_en": "Vaswani et al. (2017)",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:work/goodfellow2016deep",
+   "type": "Work",
+   "label_ko": "Goodfellow · Bengio · Courville (2016)",
+   "label_en": "Goodfellow, Bengio & Courville (2016)",
+   "pages": [
+    "one_day_deep_learning"
+   ],
+   "in_registry": false
+  }
+ ]
+}
