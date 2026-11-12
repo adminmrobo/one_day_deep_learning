@@ -1,7 +1,7 @@
 {
-  "series_ko": "AI 연구실 해설 · 딥러닝 서머리 노트",
-  "title_ko": "하루 만에 끝내는 딥러닝 서머리 노트 — 박사의 쪽지시험 대비",
-  "site_title": "하루 만에 끝내는 딥러닝 서머리 노트 — 박사의 쪽지시험 대비",
+  "series_ko": "AI 연구실 해설 · 하루에 다 끝내는 시리즈",
+  "title_ko": "하루에 다 끝내는 딥러닝 서머리 노트 — 오후반",
+  "site_title": "하루에 다 끝내는 딥러닝 서머리 노트",
   "site_url": "https://adminmrobo.github.io/one_day_deep_learning/",
   "ontology": {
     "pages": [
@@ -57,7 +57,7 @@
     {
       "id": "og",
       "role": "og",
-      "path": "assets/og_cover.png",
+      "path": "assets/og_one_day_dl_pm.jpg",
       "embedded_in": "index.html",
       "key": "meta[property='og:image']",
       "size": [
@@ -65,38 +65,32 @@
         630
       ],
       "characters": [
-        "asst",
-        "sia",
-        "moa",
-        "doc"
+        "moa"
       ],
       "robot": null,
-      "prompt_en": null,
+      "prompt_en": "docs/COVER_one_day_deep_learning.md",
       "source_of": null,
-      "status": "done",
-      "note": "코드로 그려 저장한 공유 미리보기. 흰 바탕"
+      "status": "partial",
+      "note": "모아 버전 표지(오후반). 지금은 캐릭터 팩의 졸린 모아(E17)와 구조 그림으로 만든 임시 그림. 모아 일러스트를 받으면 교체"
     },
     {
       "id": "thumb",
       "role": "thumb",
-      "path": "assets/thumb_cover.webp",
+      "path": "assets/thumb_one_day_dl_pm.webp",
       "embedded_in": "",
       "key": "",
       "size": [
-        640,
-        336
+        600,
+        400
       ],
       "characters": [
-        "asst",
-        "sia",
-        "moa",
-        "doc"
+        "moa"
       ],
       "robot": null,
       "prompt_en": null,
       "source_of": "og",
-      "status": "done",
-      "note": "목차·도감 카드용 썸네일 (og_cover를 줄인 것)"
+      "status": "partial",
+      "note": "모아 버전 썸네일 (임시)"
     },
     {
       "id": "sc_period1",

@@ -1,6 +1,8 @@
-# 하루 만에 끝내는 딥러닝 서머리 노트 — 박사의 쪽지시험 대비
+# 하루에 다 끝내는 딥러닝 서머리 노트 — 오후반
 
-AI 연구실 해설 · 딥러닝 서머리 노트 · 비전공자용
+AI 연구실 해설 · 하루에 다 끝내는 시리즈 · 비전공자용
+
+자매편: [하루에 다 끝내는 머신러닝 서머리 노트 — 오전반](https://adminmrobo.github.io/one_day_machine_learning/)
 
 **바로 보기:** https://adminmrobo.github.io/one_day_deep_learning/
 
@@ -47,7 +49,7 @@ AI 연구실 해설 · 딥러닝 서머리 노트 · 비전공자용
 |---|---|
 | `index.html` | 해설 페이지 (단일 파일, 외부 라이브러리 없음) |
 | `docs/COVER_one_day_deep_learning.md` | 표지·교시 장면 그림 지시문 (표지 1 + 장면 7) |
-| `assets/og_cover.png` · `assets/thumb_cover.webp` | 공유 미리보기(1200×630)와 썸네일(640×336) |
+| `assets/og_one_day_dl_pm.jpg` · `assets/thumb_one_day_dl_pm.webp` | 모아 버전 표지: 공유 미리보기(1200×630)와 썸네일(600×400). 지금은 캐릭터 팩의 졸린 모아로 만든 임시 그림 |
 | `cover_manifest.json` | 표지·온톨로지·언어 현황 (현황판 연결) |
 | `KG_new_ids.json` | 시리즈 등록부에 더할 새 개념 ID |
 
